@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MaVanity">
+    <output-path>$USER_HOME$/Desktop/Putty Servers/servers/plugins</output-path>
+    <root id="archive" name="MaVanity.jar">
+      <element id="module-output" name="MaVanity" />
+      <element id="file-copy" path="$PROJECT_DIR$/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/messages.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+    </root>
+  </artifact>
+</component>

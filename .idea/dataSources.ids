@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - mobarenas@localhost" uuid="762900f4-8eff-485c-a327-e366f78b87b1">
+    <database-info product="MySQL" version="5.6.22-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="mobarenas"/>
+      <table id="2" parent="1" name="echopet_version3"/>
+      <table id="3" parent="1" name="mavanity"/>
+      <column id="4" parent="2" name="OwnerName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="5" parent="2" name="PetType">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="6" parent="2" name="PetName">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="7" parent="2" name="PetData">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="8" parent="2" name="RiderPetType">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="9" parent="2" name="RiderPetName">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="10" parent="2" name="RiderPetData">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <key id="11" parent="2" name="PRIMARY">
+        <columns>OwnerName</columns>
+        <primary>1</primary>
+      </key>
+      <column id="12" parent="3" name="uuid">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="13" parent="3" name="players_visible">
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="14" parent="3" name="pets_visible">
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="15" parent="3" name="disguises_visible">
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="16" parent="3" name="particles_visible">
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="17" parent="3" name="effect_type">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="18" parent="3" name="effect">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="19" parent="3" name="color">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="20" parent="3" name="crates">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="21" parent="3" name="uuid">
+        <columns>uuid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="22" parent="3" name="PRIMARY">
+        <columns>uuid</columns>
+        <primary>1</primary>
+      </key>
+      <key id="23" parent="3" name="uuid">
+        <columns>uuid</columns>
+        <underlying-index>uuid</underlying-index>
+      </key>
+    </database-model>
+  </data-source>
+</component>

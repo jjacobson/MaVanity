@@ -1,0 +1,331 @@
+armor:
+  name: '&a%color% %piece%'
+  description:
+    - '&7Select this colored armor'
+pet:
+  name: '&a%type% pet'
+  description:
+    - '&7Select the %type% pet'
+disguise:
+  name: '&a%type% disguise'
+  description:
+    - '&7Select the %type% disguise'
+hats:
+  name: '&a%material% hat'
+  description:
+    - '&7Select the %material% hat'
+icon:
+  name: '&bProfile &7(Click to activate)'
+  description:
+    - '&7Open your profile options'
+particles:
+  particles:
+    COLOURED_DUST-WHITE:
+      name: 'White dust particle'
+      description:
+        - 'Select the white dust particle'
+    COLOURED_DUST-BLACK:
+      name: 'Black dust particle'
+      description:
+        - 'Select the black dust particle'
+    COLOURED_DUST-BLUE:
+      name: 'Blue dust particle'
+      description:
+        - 'Select the blue dust particle'
+    COLOURED_DUST-AQUA:
+      name: 'Aqua dust particle'
+      description:
+        - 'Select the aqua dust particle'
+    COLOURED_DUST-LIME:
+      name: 'Lime dust particle'
+      description:
+        - 'Select the lime dust particle'
+    COLOURED_DUST-YELLOW:
+      name: 'Yellow dust particle'
+      description:
+        - 'Select the yellow dust particle'
+    COLOURED_DUST-ORANGE:
+      name: 'Orange dust particle'
+      description:
+        - 'Select the orange dust particle'
+    COLOURED_DUST-RED:
+      name: 'Red dust particle'
+      description:
+        - 'Select the red dust particle'
+    COLOURED_DUST-PINK:
+      name: 'Pink dust particle'
+      description:
+        - 'Select the pink dust particle'
+    COLOURED_DUST-RAINBOW:
+      name: 'Rainbow dust particle'
+      description:
+        - 'Select the rainbow dust particle'
+    NOTE-PURPLE:
+      name: 'Purple note particle'
+      description:
+        - 'Select the purple note particle'
+    NOTE-RED:
+      name: 'Red note particle'
+      description:
+        - 'Select the red note particle'
+    NOTE-YELLOW:
+      name: 'Yellow note particle'
+      description:
+        - 'Select the yellow note particle'
+    NOTE-AQUA:
+      name: 'Aqua note particle'
+      description:
+        - 'Select the aqua note particle'
+    NOTE-BLUE:
+      name: 'Blue note particle'
+      description:
+        - 'Select the blue note particle'
+    NOTE-GREEN:
+      name: 'Green note particle'
+      description:
+        - 'Select the green note particle'
+    NOTE-RAINBOW:
+      name: 'Rainbow note particle'
+      description:
+        - 'Select the rainbow note particle'
+    POTION_SWIRL-WHITE:
+      name: 'White swirl particle'
+      description:
+        - 'Select the white swirl particle'
+    POTION_SWIRL-BLACK:
+      name: 'Black swirl particle'
+      description:
+        - 'Select the black swirl particle'
+    POTION_SWIRL-BLUE:
+      name: 'Blue swirl particle'
+      description:
+        - 'Select the blue swirl particle'
+    POTION_SWIRL-AQUA:
+      name: 'Aqua swirl particle'
+      description:
+        - 'Select the aqua swirl particle'
+    POTION_SWIRL-LIME:
+      name: 'Lime swirl particle'
+      description:
+        - 'Select the lime swirl particle'
+    POTION_SWIRL-YELLOW:
+      name: 'Yellow swirl particle'
+      description:
+        - 'Select the yellow swirl particle'
+    POTION_SWIRL-ORANGE:
+      name: 'Orange swirl particle'
+      description:
+        - 'Select the orange swirl particle'
+    POTION_SWIRL-RED:
+      name: 'Red swirl particle'
+      description:
+        - 'Select the red swirl particle'
+    POTION_SWIRL-PINK:
+      name: 'Pink swirl particle'
+      description:
+        - 'Select the pink swirl particle'
+    POTION_SWIRL-RAINBOW:
+      name: 'Rainbow swirl particle'
+      description:
+        - 'Select the rainbow swirl particle'
+    HAPPY_VILLAGER:
+      name: 'Happy villager particle'
+      description:
+        - 'Select the happy villager particle'
+    INSTANT_SPELL:
+      name: 'Instant spell particle'
+      description:
+        - 'Select the instant spell particle'
+    VOID_FOG:
+      name: 'Void fog particle'
+      description:
+        - 'Select the void fog particle'
+    CRIT:
+      name: 'Crit particle'
+      description:
+        - 'Select the crit particle'
+    MAGIC_CRIT:
+      name: 'Magic crit particle'
+      description:
+        - 'Select the magic crit particle'
+    WITCH_MAGIC:
+      name: 'Witch magic particle'
+      description:
+        - 'Select the witch magic particle'
+    WATERDRIP:
+      name: 'Water drip particle'
+      description:
+        - 'Select the water drip particle'
+    LAVADRIP:
+      name: 'Lava drip particle'
+      description:
+        - 'Select the lava drip particle'
+    PORTAL:
+      name: 'Portal particle'
+      description:
+        - 'Select the portal particle'
+    FLYING_GLYPH:
+      name: 'Enchantment particle'
+      description:
+        - 'Select the enchantment particle'
+    SNOWBALL_BREAK:
+      name: 'Snowball particle'
+      description:
+        - 'Select the snowball particle'
+    HEART:
+      name: 'Heart particle'
+      description:
+        - 'Select the heart particle'
+  effects:
+    name: '&a%effect% effect'
+    description:
+      - '&7Select the %effect% effect'
+pages:
+  disguise:
+    name: '&aDisguise Menu'
+    description:
+      - '&7Click to open the disguise menu'
+  hat:
+    name: '&aHat Menu'
+    description:
+      - '&7Select a hat'
+  main:
+    name: '&aMain Menu'
+    description:
+      - '&7Enter the main menu'
+  pet:
+    name: '&aPet Menu'
+    description:
+      - '&7Select a pet'
+  armor:
+    name: '&aArmor Menu'
+    description:
+      - '&7Select some armor'
+  particle:
+    name: '&aParticle Menu'
+    description:
+      - '&7Select particle effects'
+  settings:
+    name: '&aSettings Menu'
+    description:
+      - '&7Change your settings'
+  crates:
+    name: '&aOpen crates'
+    description:
+      - '&7Open your crates'
+static-buttons:
+  back:
+    name: '&aBack'
+    description:
+      - '&7Return to the main menu'
+  name:
+    name: 'Name your pet'
+    description:
+      - 'Select a name for your pet'
+  remove-pet:
+    name: 'Remove pet'
+    description:
+      - 'Remove your pet'
+  remove-disguise:
+    name: 'Remove disguise'
+    description:
+      - 'Remove your disguise'
+  remove-particle:
+    name: 'Remove particle effects'
+    description:
+      - 'Remove your current particle effect'
+  viewmode:
+    name: 'Switch viewmode'
+    description:
+      - 'Toggle first person disguise mode'
+  remove-helmet:
+    name: 'Remove Helmet'
+    description:
+      - 'Remove your helmet'
+  remove-chest:
+    name: 'Remove Chestplate'
+    description:
+      - 'Remove your chestplate'
+  remove-legs:
+    name: 'Remove Leggings'
+    description:
+      - 'Remove your leggings'
+  remove-boots:
+    name: 'Remove Boots'
+    description:
+      - 'Remove your boots'
+  page-forward:
+    name: 'Next page'
+    description:
+      - 'Go to the next page'
+  page-backward:
+    name: 'Previous page'
+    description:
+      - 'Return to the previous page'
+  remove-hat:
+    name: 'Remove hat'
+    description:
+      - 'Remove your current hat'
+  particle-page:
+    name: 'Particles'
+    description:
+      - 'Select the particle type'
+  effect-page:
+    name: 'Effects'
+    description:
+      - 'Select the effects type'
+  toggle-pets:
+    name: 'Toggle Pet Visibility'
+    description:
+      - 'Pets are currently %value%'
+  toggle-players:
+    name: 'Toggle Player Visibility'
+    description:
+      - 'Players are currently %value%'
+  toggle-disguises:
+    name: 'Toggle Disguise Visibility'
+    description:
+      - 'Disguises are currently %value%'
+  toggle-particles:
+    name: 'Toggle Particle Visibility'
+    description:
+      - 'Particles are currently %value%'
+click:
+  name-queue: '&7Please enter the new name for your pet.'
+  no-pet: '&cError: you must have a pet to do that.'
+  name-length: '&cError: a pet name must be between 3 - 32 characters.'
+  name-changed: '&7You have changed your pets name to: &r%name%'
+  pet-select: '&7You have selected the &b%pet% pet.'
+  pet-removed: '&cYour pet has been removed.'
+  no-disguise: '&cError: you must have a disguise to do that.'
+  viewable-false: '&cYou will no longer see your own disguise.'
+  viewable-true: '&7You can now see your own disguise.'
+  disguise-selected: '&7You have selected the &b%disguise% disguise.'
+  disguise-removed: '&cYour disguise has been removed.'
+  armor-chosen: '&7Your armor has been changed.'
+  armor-removed: '&7Your armor has been removed.'
+  no-armor: '&cError: you are not wearing armor in that slot.'
+  hat-selected: '&7You have selected the %material% hat'
+  hat-removed: '&cYour hat has been removed.'
+  no-hat: '&cError: you are not wearing a hat.'
+  vip-only: '&cError: only &aVIP players can use that!'
+  no-effect: '&cError: you must have an active effect to do that!'
+  effect-removed: "&7Your particle effect has been removed."
+  pets-off: '&7Pets are no longer visible.'
+  pets-on: '&7Pets are now visible.'
+  players-off: '&7Players are no longer visible.'
+  players-on: '&7Players are now visible.'
+  particles-off: '&7Particles are no longer visible.'
+  particles-on: '&7Particles are now visible.'
+  disguises-off: '&7Disguises are no longer visible.'
+  disguises-on: '&7Disguises are now visible.'
+  effect-selected: '&7You have selected the &b%effect% effect.'
+  particle-selected: '&7Particle selected.'
+crates:
+  no-perms: '&cError: you do not have permission to use that command.'
+  added: '&7You have received &b%amount% &7crate(s)!'
+  title: '%type% unlocked'
+  subtitle: 'Unlocked the %name%'
+  name: '&cLocked Chest'
+  description:
+    - '&7Click to unlock this chest!'

@@ -1,0 +1,823 @@
+mysql:
+  host: localhost
+  port: 3306
+  database: mobarenas
+  username: root
+  password: waapaa9660
+pages:
+  disguise:
+    material: MONSTER_EGG
+    damage: 50
+    size: 45
+    slot: 33
+    type: DISGUISE
+  hat:
+    material: JACK_O_LANTERN
+    size: 45
+    slot: 12
+    type: HAT
+  main:
+    material: WOOL
+    size: 45
+    slot: 3
+    type: MAIN
+  pet:
+    material: RAW_FISH
+    damage: 2
+    size: 45
+    slot: 29
+    type: PET
+  armor:
+    material: ARMOR_STAND
+    size: 45
+    slot: 16
+    type: ARMOR
+  particle:
+    material: NETHER_STAR
+    size: 45
+    slot: 10
+    type: PARTICLE
+  settings:
+    material: REDSTONE_TORCH_ON
+    size: 36
+    slot: 14
+    type: SETTINGS
+  crates:
+    material: CHEST
+    size: 45
+    slot: 31
+    type: CRATES
+static-buttons:
+  back:
+    item: ARROW
+    type: BACK
+    permission: mobarenas.vanity.back
+    vip: false
+  name:
+    item: NAME_TAG
+    type: NAME
+    permission: mobarenas.vanity.name
+    vip: true
+  remove-pet:
+    item: BARRIER
+    type: REMOVE_PET
+    permission: mobarenas.vanity.pet.remove
+    vip: false
+  remove-disguise:
+    item: BARRIER
+    type: REMOVE_DISGUISE
+    permission: mobarenas.vanity.disguise.remove
+    vip: false
+  remove-particle:
+    item: BARRIER
+    type: REMOVE_PARTICLE
+    permission: mobarenas.vanity.particle.remove
+    vip: false
+  viewmode:
+    item: EYE_OF_ENDER
+    type: VIEWMODE
+    permission: mobarenas.vanity.viewmode.toggle
+    vip: false
+  remove-helmet:
+    item: BARRIER
+    type: REMOVE_HELMET
+    permission: mobarenas.vanity.armor.remove.helmet
+    vip: false
+  remove-chest:
+    item: BARRIER
+    type: REMOVE_CHEST
+    permission: mobarenas.vanity.armor.remove.chest
+    vip: false
+  remove-legs:
+    item: BARRIER
+    type: REMOVE_LEGS
+    permission: mobarenas.vanity.armor.remove.legs
+    vip: false
+  remove-boots:
+    item: BARRIER
+    type: REMOVE_BOOTS
+    permission: mobarenas.vanity.armor.remove.boots
+    vip: false
+  page-forward:
+    item: FEATHER
+    type: PAGE_FORWARD
+    permission: mobarenas.vanity.armor.forward
+    vip: false
+  page-backward:
+    item: FEATHER
+    type: PAGE_BACKWARD
+    permission: mobarenas.vanity.armor.backward
+    vip: false
+  remove-hat:
+    item: BARRIER
+    type: REMOVE_HAT
+    permission: mobarenas.vanity.hat.remove
+    vip: false
+  particle-page:
+    item: BLAZE_POWDER
+    type: PARTICLE_PAGE
+    permission: mobarenas.vanity.particle.page
+    vip: false
+  effect-page:
+    item: FIREWORK
+    type: EFFECT_PAGE
+    permission: mobarenas.vanity.effect.page
+    vip: false
+  toggle-pets:
+    item: RAW_FISH:2
+    damage: 2
+    type: TOGGLE_PETS
+    permission: mobarenas.vanity.toggle.pets
+    vip: false
+  toggle-players:
+    item: JACK_O_LANTERN
+    type: TOGGLE_PLAYERS
+    permission: mobarenas.vanity.toggle.players
+    vip: false
+  toggle-disguises:
+    item: LEATHER_HELMET
+    type: TOGGLE_DISGUISES
+    permission: mobarenas.vanity.toggle.disguises
+    vip: false
+  toggle-particles:
+    item: FIREWORK
+    type: TOGGLE_PARTICLES
+    permission: mobarenas.vanity.toggle.particles
+    vip: false
+armor:
+  colors:
+    - '255:255:255:White'
+    - '128:128:128:Gray'
+    - '0:0:0:Black'
+    - '0:191:255:Light Blue'
+    - '0:255:255:Cyan'
+    - '0:0:255:Blue'
+    - '0:255:0:Lime'
+    - '0:128:0:Green'
+    - '218:165:32:Golden'
+    - '255:255:0:Yellow'
+    - '255:96:0:Orange'
+    - '255:0:0:Red'
+    - '128:0:0:Maroon'
+    - '139:69:19:Brown'
+    - '255:105:180:Pink'
+    - '255:0:255:Purple'
+disguises:
+  WOLF:
+    item: MONSTER_EGG
+    damage: 95
+    vip: false
+  OCELOT:
+    item: MONSTER_EGG
+    damage: 98
+    vip: false
+  COW:
+    item: MONSTER_EGG
+    damage: 92
+    vip: false
+  CHICKEN:
+    item: MONSTER_EGG
+    damage: 93
+    vip: false
+  BAT:
+    item: MONSTER_EGG
+    damage: 65
+    vip: false
+  PIG:
+    item: MONSTER_EGG
+    damage: 90
+    vip: false
+  RABBIT:
+    item: MONSTER_EGG
+    damage: 101
+    vip: false
+  MUSHROOM_COW:
+    item: MONSTER_EGG
+    damage: 96
+    vip: false
+  VILLAGER:
+    item: MONSTER_EGG
+    damage: 120
+    vip: false
+  SKELETON:
+    item: MONSTER_EGG
+    damage: 51
+    vip: false
+  PIG_ZOMBIE:
+    item: MONSTER_EGG
+    damage: 57
+    vip: false
+  SPIDER:
+    item: MONSTER_EGG
+    damage: 52
+    vip: false
+  WITCH:
+    item: MONSTER_EGG
+    damage: 66
+    vip: false
+  ZOMBIE:
+    item: MONSTER_EGG
+    damage: 54
+    vip: false
+  CAVE_SPIDER:
+    item: MONSTER_EGG
+    damage: 59
+    vip: false
+  ENDERMAN:
+    item: MONSTER_EGG
+    damage: 58
+    vip: false
+  CREEPER:
+    item: MONSTER_EGG
+    damage: 50
+    vip: false
+  MAGMA_CUBE:
+    item: MONSTER_EGG
+    damage: 62
+    vip: false
+  BLAZE:
+    item: MONSTER_EGG
+    damage: 61
+    vip: false
+  SNOWMAN:
+    item: MONSTER_EGG
+    damage: 56
+    vip: false
+  SHEEP:
+    item: MONSTER_EGG
+    damage: 91
+    vip: false
+  SQUID:
+    item: MONSTER_EGG
+    damage: 94
+    vip: false
+  ELDER_GUARDIAN:
+    item: MONSTER_EGG
+    damage: 68
+    vip: false
+  ENDERMITE:
+    item: MONSTER_EGG
+    damage: 67
+    vip: false
+  IRON_GOLEM:
+    item: MONSTER_EGG
+    damage: 51
+    vip: false
+  HORSE:
+    item: MONSTER_EGG
+    damage: 100
+    vip: false
+  SKELETON_HORSE:
+    item: MONSTER_EGG
+    damage: 51
+    vip: false
+  UNDEAD_HORSE:
+    item: MONSTER_EGG
+    damage: 54
+    vip: false
+  MULE:
+    item: MONSTER_EGG
+    damage: 65
+    vip: false
+  SLIME:
+    item: MONSTER_EGG
+    damage: 55
+    vip: false
+  SILVERFISH:
+    item: MONSTER_EGG
+    damage: 60
+    vip: false
+  GUARDIAN:
+    item: MONSTER_EGG
+    damage: 68
+    vip: false
+pets:
+  WOLF:
+    item: MONSTER_EGG
+    damage: 95
+    vip: false
+  OCELOT:
+    item: MONSTER_EGG
+    damage: 98
+    vip: false
+  COW:
+    item: MONSTER_EGG
+    damage: 92
+    vip: false
+  CHICKEN:
+    item: MONSTER_EGG
+    damage: 93
+    vip: false
+  BAT:
+    item: MONSTER_EGG
+    damage: 65
+    vip: false
+  PIG:
+    item: MONSTER_EGG
+    damage: 90
+    vip: false
+  RABBIT:
+    item: MONSTER_EGG
+    damage: 101
+    vip: false
+  MUSHROOMCOW:
+    item: MONSTER_EGG
+    damage: 96
+    vip: false
+  VILLAGER:
+    item: MONSTER_EGG
+    damage: 120
+    vip: false
+  SKELETON:
+    item: MONSTER_EGG
+    damage: 51
+    vip: false
+  PIGZOMBIE:
+    item: MONSTER_EGG
+    damage: 57
+    vip: false
+  SPIDER:
+    item: MONSTER_EGG
+    damage: 52
+    vip: false
+  WITCH:
+    item: MONSTER_EGG
+    damage: 66
+    vip: false
+  ZOMBIE:
+    item: MONSTER_EGG
+    damage: 54
+    vip: false
+  CAVESPIDER:
+    item: MONSTER_EGG
+    damage: 59
+    vip: false
+  ENDERMAN:
+    item: MONSTER_EGG
+    damage: 58
+    vip: false
+  CREEPER:
+    item: MONSTER_EGG
+    damage: 50
+    vip: false
+  MAGMACUBE:
+    item: MONSTER_EGG
+    damage: 62
+    vip: false
+  BLAZE:
+    item: MONSTER_EGG
+    damage: 61
+    vip: false
+  SNOWMAN:
+    item: MONSTER_EGG
+    damage: 56
+    vip: false
+  SHEEP:
+    item: MONSTER_EGG
+    damage: 91
+    vip: false
+  SQUID:
+    item: MONSTER_EGG
+    damage: 94
+    vip: false
+  GUARDIAN:
+    item: MONSTER_EGG
+    damage: 68
+    vip: false
+  ENDERMITE:
+    item: MONSTER_EGG
+    damage: 67
+    vip: false
+  IRONGOLEM:
+    item: MONSTER_EGG
+    damage: 51
+    vip: false
+  HORSE:
+    item: MONSTER_EGG
+    damage: 100
+    vip: false
+  SLIME:
+    item: MONSTER_EGG
+    damage: 55
+    vip: false
+  SILVERFISH:
+    item: MONSTER_EGG
+    damage: 60
+    vip: false
+hats:
+  GRASS:
+    vip: false
+  SPONGE:
+    vip: false
+  LAPIS_BLOCK:
+    vip: false
+  GOLD_BLOCK:
+    vip: false
+  IRON_BLOCK:
+    vip: false
+  DIAMOND_BLOCK:
+    vip: false
+  EMERALD_BLOCK:
+    vip: false
+  REDSTONE_BLOCK:
+    vip: false
+  COAL_BLOCK:
+    vip: false
+  QUARTZ_BLOCK:
+    vip: false
+    damage: 1
+  BRICK:
+    vip: false
+  TNT:
+    vip: false
+  OBSIDIAN:
+    vip: false
+  ICE:
+    vip: false
+  PUMPKIN:
+    vip: false
+  GLOWSTONE:
+    vip: false
+  MELON_BLOCK:
+    vip: false
+  ENDER_STONE:
+    vip: false
+  REDSTONE_LAMP_ON:
+    vip: false
+  SLIME_BLOCK:
+    vip: false
+  SEA_LANTERN:
+    vip: false
+  PRISMARINE:
+    vip: false
+  HAY_BLOCK:
+    vip: false
+  BANNER-CREEPER:
+    patterns:
+      - 'BASE:WHITE'
+      - 'GRADIENT_UP:LIME'
+      - 'GRADIENT:GREEN'
+      - 'CREEPER:BLACK'
+    vip: false
+  BANNER-DRAGON:
+    patterns:
+      - 'BASE:MAGENTA'
+      - 'FLOWER:PURPLE'
+      - 'HALF_HORIZONTAL_MIRROR:MAGENTA'
+      - 'BORDER:BLACK'
+      - 'STRIPE_MIDDLE:BLACK'
+      - 'STRIPE_BOTTOM:BLACK'
+      - 'STRIPE_TOP:BLACK'
+      - 'TRIANGLE_TOP:BLACK'
+    vip: false
+  BANNER-PIRATE:
+    patterns:
+      - 'BASE:BLACK'
+      - 'SKULL:WHITE'
+    vip: false
+  BANNER-SKULL:
+    patterns:
+      - 'BASE:BLACK'
+      - 'BRICKS:GRAY'
+      - 'GRADIENT_UP:ORANGE'
+      - 'TRIANGLES_BOTTOM:ORANGE'
+      - 'FLOWER:RED'
+      - 'SKULL:BLACK'
+    vip: false
+  BANNER-MOJANG:
+    patterns:
+      - 'BASE:BROWN'
+      - 'MOJANG:ORANGE'
+      - 'GRADIENT_UP:BLACK'
+      - 'TRIANGLES_TOP:GREEN'
+    vip: false
+  BANNER-WOLF:
+    patterns:
+      - 'BASE:WHITE'
+      - 'RHOMBUS_MIDDLE:BLACK'
+      - 'RHOMBUS_MIDDLE:BLACK'
+      - 'CIRCLE_MIDDLE:SILVER'
+      - 'CURLY_BORDER:SILVER'
+      - 'CREEPER:SILVER'
+      - 'TRIANGLE_TOP:WHITE'
+    vip: false
+  BANNER-SMILEY:
+    patterns:
+      - 'BASE:YELLOW'
+      - 'CREEPER:BLACK'
+      - 'STRIPE_SMALL:WHITE'
+      - 'HALF_HORIZONTAL_MIRROR:YELLOW'
+      - 'TRIANGLE_TOP:YELLOW'
+      - 'STRAIGHT_CROSS:YELLOW'
+      - 'STRIPE_MIDDLE:YELLOW'
+      - 'STRIPE_TOP:YELLOW'
+      - 'MOJANG:BLACK'
+      - 'TRIANGLE_TOP:YELLOW'
+      - 'STRIPE_MIDDLE:YELLOW'
+      - 'BORDER:YELLOW'
+      - 'STRIPE_MIDDLE:YELLOW'
+    vip: false
+  BANNER-BAT:
+    patterns:
+      - 'BASE:PURPLE'
+      - 'HALF_HORIZONTAL_MIRROR:BLACK'
+      - 'CIRCLE_MIDDLE:PURPLE'
+      - 'STRIPE_CENTER:BLACK'
+      - 'TRIANGLE_TOP:PURPLE'
+      - 'TRIANGLES_BOTTOM:PURPLE'
+    vip: false
+  BANNER-RABBIT:
+    patterns:
+      - 'BASE:WHITE'
+      - 'CIRCLE_MIDDLE:BLACK'
+      - 'FLOWER:WHITE'
+      - 'TRIANGLE_TOP:LIGHT_BLUE'
+      - 'CROSS:WHITE'
+      - 'CURLY_BORDER:LIGHT_BLUE'
+      - 'TRIANGLES_BOTTOM:WHITE'
+    vip: false
+  BANNER-CHICKEN:
+    patterns:
+      - 'BASE:WHITE'
+      - 'STRIPE_TOP:BLACK'
+      - 'STRIPE_CENTER:WHITE'
+      - 'STRIPE_MIDDLE:ORANGE'
+      - 'HALF_HORIZONTAL_MIRROR:RED'
+      - 'BORDER:WHITE'
+      - 'STRIPE_MIDDLE:YELLOW'
+      - 'STRIPE_BOTTOM:WHITE'
+    vip: false
+  BANNER-VILLAGER:
+    patterns:
+      - 'BASE:WHITE'
+      - 'RHOMBUS_MIDDLE:GREEN'
+      - 'STRIPE_BOTTOM:BROWN'
+      - 'STRIPE_CENTER:ORANGE'
+      - 'BORDER:BROWN'
+      - 'STRIPE_MIDDLE:BLACK'
+      - 'HALF_HORIZONTAL:BROWN'
+    vip: false
+  BANNER-CAKE:
+    patterns:
+      - 'BASE:RED'
+      - 'STRIPE_SMALL:WHITE'
+      - 'BRICKS:WHITE'
+      - 'HALF_HORIZONTAL_MIRROR:BROWN'
+      - 'STRIPE_TOP:BLACK'
+      - 'STRIPE_BOTTOM:BLACK'
+      - 'BORDER:BLACK'
+    vip: false
+  BANNER-SLIME:
+    patterns:
+      - 'BASE:LIME'
+      - 'HALF_HORIZONTAL_MIRROR:GREEN'
+      - 'STRIPE_RIGHT:LIME'
+      - 'HALF_VERTICAL:LIME'
+      - 'HALF_HORIZONTAL:GREEN'
+      - 'STRAIGHT_CROSS:LIME'
+      - 'BORDER:LIME'
+      - 'STRIPE_TOP:LIME'
+      - 'STRIPE_BOTTOM:LIME'
+    vip: false
+  BANNER-HEART:
+    patterns:
+      - 'BASE:WHITE'
+      - 'RHOMBUS_MIDDLE:RED'
+      - 'HALF_HORIZONTAL:WHITE'
+      - 'CIRCLE_MIDDLE:RED'
+      - 'TRIANGLE_TOP:WHITE'
+      - 'GRADIENT_UP:PINK'
+    vip: false
+particles:
+  particles:
+    COLOURED_DUST-WHITE:
+      item: INK_SACK
+      damage: 15
+      vip: false
+      color: '255:255:255'
+      permission: mobarneas.vanity.particles.whitedust
+    COLOURED_DUST-BLACK:
+      item: COAL
+      vip: false
+      color: '25:25:25'
+      permission: mobarneas.vanity.particles.blackdust
+    COLOURED_DUST-BLUE:
+      item: INK_SACK
+      damage: 4
+      vip: false
+      color: '0:0:255'
+      permission: mobarneas.vanity.particles.bluedust
+    COLOURED_DUST-AQUA:
+      item: INK_SACK
+      damage: 12
+      vip: false
+      color: '51:255:255'
+      permission: mobarneas.vanity.particles.aquadust
+    COLOURED_DUST-LIME:
+      item: INK_SACK
+      damage: 10
+      vip: false
+      color: '0:255:0'
+      permission: mobarneas.vanity.particles.limedust
+    COLOURED_DUST-YELLOW:
+      item: INK_SACK
+      damage: 11
+      vip: false
+      color: '255:255:0'
+      permission: mobarneas.vanity.particles.yellowdust
+    COLOURED_DUST-ORANGE:
+      item: INK_SACK
+      damage: 14
+      vip: false
+      color: '255:69:0'
+      permission: mobarneas.vanity.particles.orangedust
+    COLOURED_DUST-RED:
+      item: INK_SACK
+      damage: 1
+      vip: false
+      color: '255:0:0'
+      permission: mobarneas.vanity.particles.reddust
+    COLOURED_DUST-PINK:
+      item: INK_SACK
+      damage: 9
+      vip: false
+      color: '255:105:180'
+      permission: mobarneas.vanity.particles.pinkdust
+    COLOURED_DUST-RAINBOW:
+      item: CAKE
+      vip: false
+      color: '1:1:1'
+      permission: mobarneas.vanity.particles.rainbowdust
+    NOTE-PURPLE:
+      item: RECORD_7
+      vip: false
+      color: '5:0:0'
+      permission: mobarneas.vanity.particles.purplerecord
+    NOTE-RED:
+      item: RECORD_4
+      vip: false
+      color: '6:0:0'
+      permission: mobarneas.vanity.particles.redrecord
+    NOTE-YELLOW:
+      item: GOLD_RECORD
+      vip: false
+      color: '7:0:0'
+      permission: mobarneas.vanity.particles.yellowrecord
+    NOTE-AQUA:
+      item: RECORD_12
+      vip: false
+      color: '13:0:0'
+      permission: mobarneas.vanity.particles.aquarecord
+    NOTE-BLUE:
+      item: RECORD_6
+      vip: false
+      color: '14:0:0'
+      permission: mobarneas.vanity.particles.bluerecord
+    NOTE-GREEN:
+      item: GREEN_RECORD
+      vip: false
+      color: '22:0:0'
+      permission: mobarneas.vanity.particles.greenrecord
+    NOTE-RAINBOW:
+      item: RECORD_11
+      vip: false
+      color: '0:0:0'
+      permission: mobarneas.vanity.particles.rainbowrecord
+    POTION_SWIRL-WHITE:
+      item: POTION
+      damage: 8194
+      vip: false
+      color: '255:255:255'
+      permission: mobarneas.vanity.particles.whiteswirl
+    POTION_SWIRL-BLACK:
+      item: POTION
+      damage: 8204
+      vip: false
+      color: '25:25:25'
+      permission: mobarneas.vanity.particles.blackswirl
+    POTION_SWIRL-BLUE:
+      item: POTION
+      damage: 8198
+      vip: false
+      color: '0:0:255'
+      permission: mobarneas.vanity.particles.blueswirl
+    POTION_SWIRL-AQUA:
+      item: POTION
+      damage: 8235
+      vip: false
+      color: '51:255:255'
+      permission: mobarneas.vanity.particles.aquaswirl
+    POTION_SWIRL-LIME:
+      item: POTION
+      damage: 8260
+      vip: false
+      color: '0:255:0'
+      permission: mobarneas.vanity.particles.limeswirl
+    POTION_SWIRL-YELLOW:
+      item: GOLD_INGOT
+      vip: false
+      color: '255:255:0'
+      permission: mobarneas.vanity.particles.yellowswirl
+    POTION_SWIRL-ORANGE:
+      item: POTION
+      damage: 8195
+      vip: false
+      color: '255:69:0'
+      permission: mobarneas.vanity.particles.orangeswirl
+    POTION_SWIRL-RED:
+      item: POTION
+      damage: 8233
+      vip: false
+      color: '255:0:0'
+      permission: mobarneas.vanity.particles.redswirl
+    POTION_SWIRL-PINK:
+      item: POTION
+      damage: 8257
+      vip: false
+      color: '255:105:180'
+      permission: mobarneas.vanity.particles.pinkswirl
+    POTION_SWIRL-RAINBOW:
+      item: POTION
+      damage: 8229
+      vip: false
+      color: '1:1:1'
+      permission: mobarneas.vanity.particles.rainbowswirl
+    HAPPY_VILLAGER:
+      item: EMERALD
+      vip: false
+      permission: mobarenas.vanity.particles.villager
+    INSTANT_SPELL:
+      item: STICK
+      vip: false
+      permission: mobarenas.vanity.particles.instantspell
+    VOID_FOG:
+      item: COAL
+      damage: 1
+      vip: false
+      permission: mobarenas.vanity.particles.voidfog
+    CRIT:
+      item: NETHER_STAR
+      vip: false
+      permission: mobarenas.vanity.particles.crit
+    MAGIC_CRIT:
+      item: ENCHANTED_BOOK
+      vip: false
+      permission: mobarenas.vanity.particles.magiccrit
+    WITCH_MAGIC:
+      item: MONSTER_EGG
+      damage: 66
+      vip: false
+      permission: mobarenas.vanity.particles.witchmagic
+    WATERDRIP:
+      item: WATER_BUCKET
+      vip: false
+      permission: mobarenas.vanity.particles.waterdrip
+    LAVADRIP:
+      item: LAVA_BUCKET
+      vip: false
+      permission: mobarenas.vanity.particles.lavadrip
+    PORTAL:
+      item: OBSIDIAN
+      vip: false
+      permission: mobarenas.vanity.particles.portal
+    FLYING_GLYPH:
+      item: ENCHANTMENT_TABLE
+      vip: false
+      permission: mobarenas.vanity.particles.enchantmenttable
+    SNOWBALL_BREAK:
+      item: SNOW_BALL
+      vip: false
+      permission: mobarenas.vanity.particles.snowball
+    HEART:
+      item: POTION
+      damage: 16389
+      vip: false
+      permission: mobarenas.vanity.particles.heart
+  effects:
+    HALO:
+      item: DOUBLE_PLANT
+      vip: false
+    SPHERE:
+      item: MAGMA_CREAM
+      vip: false
+    WINGS:
+      item: FEATHER
+      vip: false
+    RINGS:
+      item: RECORD_12
+      vip: false
+    VORTEX:
+      item: STRING
+      vip: false
+    TWISTER:
+      item: SUGAR
+      vip: false
+    SPIRAL:
+      item: BLAZE_POWDER
+      vip: false
+    FEET:
+      item: GOLD_BOOTS
+      vip: false
+    BODY:
+      item: DIAMOND_CHESTPLATE
+      vip: false

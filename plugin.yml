@@ -1,0 +1,6 @@
+main: com.mobarenas.mavanity.MaVanity
+name: MaVanity
+version: 1.0
+depend: [EchoPet, LibsDisguises, Vault]
+commands:
+  addcrates:
