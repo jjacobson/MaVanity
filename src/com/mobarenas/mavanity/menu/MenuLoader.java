@@ -15,7 +15,6 @@ import org.bukkit.Material;
 import org.bukkit.block.banner.Pattern;
 import org.bukkit.block.banner.PatternType;
 import org.bukkit.configuration.ConfigurationSection;
-import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BannerMeta;
@@ -24,6 +23,7 @@ import org.bukkit.inventory.meta.LeatherArmorMeta;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by HP1 on 12/22/2015.
@@ -48,7 +48,7 @@ public class MenuLoader {
         loadEffects();
     }
 
-    // TODO: 1/6/2016 cleanup this class 
+    // TODO: 1/6/2016 cleanup this class
     private void loadPages() {
         ConfigurationSection section = plugin.getConfig().getConfigurationSection("pages");
         for (String p : section.getKeys(false)) {
@@ -81,7 +81,7 @@ public class MenuLoader {
             ItemStack stack = new ItemStack(material);
             ItemMeta meta = stack.getItemMeta();
             String title;
-            String permission = "mobarena.vanity.hat." + split[0].toLowerCase();
+            String permission = "mobarenas.vanity.hat." + split[0].toLowerCase();
             if (material != Material.BANNER) {
                 stack.setDurability((short) sec.getInt("damage"));
                 String mat = material.toString().toLowerCase().replace("_", " ");
@@ -157,13 +157,14 @@ public class MenuLoader {
             meta.setDisplayName(name);
             meta.setLore(description);
             stack.setItemMeta(meta);
+            List<Effect> effects = sec.getStringList("effects").stream().map(Effect::valueOf).collect(Collectors.toList());
+            plugin.getAvailableManager().addEffect(effectType, effects);
             items.add(new MenuItem(stack, permission, ItemType.EFFECT, vip, effectType));
         }
     }
 
     private void loadDisguises() {
         ConfigurationSection section = plugin.getConfig().getConfigurationSection("disguises");
-        ItemType type = ItemType.DISGUISE;
         for (String entry : section.getKeys(false)) {
             ConfigurationSection sec = section.getConfigurationSection(entry);
             DisguiseType disguiseType = DisguiseType.valueOf(entry);
@@ -171,22 +172,20 @@ public class MenuLoader {
             short damage = (short) sec.getInt("damage");
             ItemStack stack = new ItemStack(material, 1, damage);
             ItemMeta meta = stack.getItemMeta();
-            String ts = type.toString().toLowerCase();
             String m = entry.toLowerCase().replace("_", " ");
             String caps = Character.toString(m.charAt(0)).toUpperCase();
             String mob = caps + m.substring(1, m.length());
-            meta.setDisplayName(Messages.getMessage(ts + ".name", new Pair("%type%", mob)));
-            meta.setLore(Messages.getMessages(ts + ".description", new Pair("%type%", m)));
+            meta.setDisplayName(Messages.getMessage("disguise.name", new Pair("%type%", mob)));
+            meta.setLore(Messages.getMessages("disguise.description", new Pair("%type%", m)));
             stack.setItemMeta(meta);
             boolean vip = sec.getBoolean("vip");
-            String permission = "mobarena.vanity." + type.toString().toLowerCase() + "." + entry.toString().toLowerCase();
-            items.add(new MenuItem(stack, permission, type, vip, disguiseType));
+            String permission = "mobarenas.vanity.disguise." + entry.toString().toLowerCase();
+            items.add(new MenuItem(stack, permission, ItemType.DISGUISE, vip, disguiseType));
         }
     }
 
     private void loadPets() {
         ConfigurationSection section = plugin.getConfig().getConfigurationSection("pets");
-        ItemType type = ItemType.PET;
         for (String entry : section.getKeys(false)) {
             ConfigurationSection sec = section.getConfigurationSection(entry);
             PetType petType = PetType.valueOf(entry);
@@ -194,16 +193,15 @@ public class MenuLoader {
             short damage = (short) sec.getInt("damage");
             ItemStack stack = new ItemStack(material, 1, damage);
             ItemMeta meta = stack.getItemMeta();
-            String ts = type.toString().toLowerCase();
             String m = entry.toLowerCase().replace("_", " ");
             String caps = Character.toString(m.charAt(0)).toUpperCase();
             String mob = caps + m.substring(1, m.length());
-            meta.setDisplayName(Messages.getMessage(ts + ".name", new Pair("%type%", mob)));
-            meta.setLore(Messages.getMessages(ts + ".description", new Pair("%type%", m)));
+            meta.setDisplayName(Messages.getMessage("pet.name", new Pair("%type%", mob)));
+            meta.setLore(Messages.getMessages("pet.description", new Pair("%type%", m)));
             stack.setItemMeta(meta);
             boolean vip = sec.getBoolean("vip");
-            String permission = "mobarena.vanity." + type.toString().toLowerCase() + "." + entry.toString().toLowerCase();
-            items.add(new MenuItem(stack, permission, type, vip, petType));
+            String permission = "mobarenas.vanity.pet." + entry.toString().toLowerCase();
+            items.add(new MenuItem(stack, permission, ItemType.PET, vip, petType));
         }
     }
 
@@ -243,11 +241,7 @@ public class MenuLoader {
         meta.setLore(Messages.getMessages("armor.description"));
         stack.setItemMeta(meta);
         ItemType itemType = ItemType.ARMOR;
-        int r, g, b;
-        r = color.getRed();
-        g = color.getGreen();
-        b = color.getBlue();
-        String permission = ("mobarena.vanity." + type.toString().toLowerCase() + "." + r + "." + g + "." + b);
+        String permission = ("mobarenas.vanity." + type.toString().toLowerCase() + "." + colorName);
         items.add(new MenuItem(stack, permission, itemType, false, type, color));
     }
 

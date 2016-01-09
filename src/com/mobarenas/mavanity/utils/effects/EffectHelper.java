@@ -34,8 +34,8 @@ public class EffectHelper {
             case NOTE:
                 showNote(loc, effect, color, amount);
                 break;
-            case INSTANT_SPELL:
-                showInstant(loc, effect);
+            case FIREWORKS_SPARK:
+                showFirework(loc, effect);
                 break;
             case VOID_FOG:
                 showFog(loc, effect);
@@ -50,19 +50,29 @@ public class EffectHelper {
             case PORTAL:
                 showPortal(loc, effect);
                 break;
+            case FLYING_GLYPH:
+                showGlyph(loc, effect);
+                break;
             default:
                 showEffect(loc, effect, amount);
         }
     }
 
-    private static void showInstant(Location loc, Effect effect) {
+    private static void showGlyph(Location loc, Effect effect) {
         for (Player p : plugin.getServer().getOnlinePlayers()) {
             if (plugin.getSettingsManager().getDisabledParticles().contains(p)) {
                 continue;
             }
-            for (int i = 0; i < 2; i++) {
-                p.spigot().playEffect(loc, effect, 0, 0, 0.0F, 0.0F, 0.0F, 0.0F, 1, 16);
+            p.spigot().playEffect(loc, effect, 0, 0, 0.03F, 0.03F, 0.01F, 0.0F, 3, 16);
+        }
+    }
+
+    private static void showFirework(Location loc, Effect effect) {
+        for (Player p : plugin.getServer().getOnlinePlayers()) {
+            if (plugin.getSettingsManager().getDisabledParticles().contains(p)) {
+                continue;
             }
+            p.spigot().playEffect(loc, effect, 0, 0, 0.0F, 0.5F, 0.0F, 0.1F, 0, 16);
         }
     }
 
@@ -106,9 +116,7 @@ public class EffectHelper {
             if (plugin.getSettingsManager().getDisabledParticles().contains(p)) {
                 continue;
             }
-            for (int i = 0; i < 2; i++) {
-                p.spigot().playEffect(loc, effect, 0, 0, 0.0F, 0.0F, 0.0F, 0.0F, 1, 16);
-            }
+            p.spigot().playEffect(loc, effect, 0, 0, 0.0F, 0.0F, 0.0F, 0.0F, 1, 16);
         }
     }
 
@@ -128,9 +136,7 @@ public class EffectHelper {
             if (plugin.getSettingsManager().getDisabledParticles().contains(p)) {
                 continue;
             }
-            for (int i = 0; i < 2; i++) {
-                p.spigot().playEffect(loc, effect, 0, 0, 0.0F, 0.0F, 0.0F, 0.0F, 1, 16);
-            }
+            p.spigot().playEffect(loc, effect, 0, 0, 0.0F, 0.0F, 0.0F, 0.0F, 1, 16);
         }
     }
 

@@ -24,6 +24,9 @@ public class PetSpawnListener implements Listener {
 
     @EventHandler
     public void petSpawn(PetPreSpawnEvent event) {
+        String pet = event.getPet().getPetType().toString().toLowerCase();
+        event.getPet().getOwner().addAttachment(plugin, "echopet.pet.type." + pet + ".*", true);
+        event.getPet().getOwner().addAttachment(plugin, "echopet.pet.type." + pet, true);
         Bukkit.getServer().getScheduler().runTaskLater(plugin, () -> {
             Entity petEntity = event.getPet().getEntityPet().getBukkitEntity();
             for (UUID uuid : plugin.getPlayerManager().getProfiles().keySet()) {

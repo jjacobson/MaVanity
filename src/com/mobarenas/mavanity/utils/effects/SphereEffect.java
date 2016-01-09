@@ -4,7 +4,6 @@ import com.mobarenas.mavanity.MaVanity;
 import org.bukkit.Color;
 import org.bukkit.Effect;
 import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;

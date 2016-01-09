@@ -1,7 +1,7 @@
 mysql:
   host: localhost
   port: 3306
-  database: mobarenas
+  database: mobarena
   username: root
   password: waapaa9660
 pages:
@@ -643,6 +643,12 @@ particles:
       vip: false
       color: '255:105:180'
       permission: mobarneas.vanity.particles.pinkdust
+    COLOURED_DUST-PURPLE:
+      item: INK_SACK
+      damage: 5
+      vip: false
+      color: '127:63:178'
+      permission: mobarneas.vanity.particles.purpledust
     COLOURED_DUST-RAINBOW:
       item: CAKE
       vip: false
@@ -746,10 +752,10 @@ particles:
       item: EMERALD
       vip: false
       permission: mobarenas.vanity.particles.villager
-    INSTANT_SPELL:
-      item: STICK
+    FIREWORKS_SPARK:
+      item: FIREWORK
       vip: false
-      permission: mobarenas.vanity.particles.instantspell
+      permission: mobarenas.vanity.particles.fireworksspark
     VOID_FOG:
       item: COAL
       damage: 1
@@ -797,27 +803,145 @@ particles:
     HALO:
       item: DOUBLE_PLANT
       vip: false
+      effects:
+        - COLOURED_DUST
+        - NOTE
+        - POTION_SWIRL
+        - HAPPY_VILLAGER
+        - FIREWORKS_SPARK
+        - VOID_FOG
+        - CRIT
+        - MAGIC_CRIT
+        - WITCH_MAGIC
+        - WATERDRIP
+        - LAVADRIP
+        - FLYING_GLYPH
+        - SNOWBALL_BREAK
+        - HEART
     SPHERE:
       item: MAGMA_CREAM
       vip: false
+      effects:
+        - COLOURED_DUST
+        - POTION_SWIRL
+        - HAPPY_VILLAGER
+        - FIREWORKS_SPARK
+        - VOID_FOG
+        - WITCH_MAGIC
+        - WATERDRIP
+        - LAVADRIP
+        - PORTAL
+        - FLYING_GLYPH
     WINGS:
       item: FEATHER
       vip: false
+      effects:
+        - COLOURED_DUST
+        - HAPPY_VILLAGER
+        - FIREWORKS_SPARK
+        - VOID_FOG
+        - WITCH_MAGIC
+        - FLYING_GLYPH
     RINGS:
       item: RECORD_12
       vip: false
+      effects:
+        - COLOURED_DUST
+        - POTION_SWIRL
+        - HAPPY_VILLAGER
+        - FIREWORKS_SPARK
+        - VOID_FOG
+        - CRIT
+        - MAGIC_CRIT
+        - WITCH_MAGIC
+        - WATERDRIP
+        - LAVADRIP
+        - FLYING_GLYPH
     VORTEX:
       item: STRING
       vip: false
+      effects:
+        - COLOURED_DUST
+        - NOTE
+        - POTION_SWIRL
+        - HAPPY_VILLAGER
+        - FIREWORKS_SPARK
+        - VOID_FOG
+        - CRIT
+        - MAGIC_CRIT
+        - WITCH_MAGIC
+        - WATERDRIP
+        - LAVADRIP
+        - PORTAL
+        - FLYING_GLYPH
     TWISTER:
       item: SUGAR
       vip: false
+      effects:
+        - COLOURED_DUST
+        - POTION_SWIRL
+        - HAPPY_VILLAGER
+        - FIREWORKS_SPARK
+        - VOID_FOG
+        - CRIT
+        - MAGIC_CRIT
+        - WITCH_MAGIC
+        - WATERDRIP
+        - LAVADRIP
+        - PORTAL
+        - FLYING_GLYPH
     SPIRAL:
       item: BLAZE_POWDER
       vip: false
+      effects:
+        - COLOURED_DUST
+        - NOTE
+        - POTION_SWIRL
+        - HAPPY_VILLAGER
+        - FIREWORKS_SPARK
+        - VOID_FOG
+        - CRIT
+        - MAGIC_CRIT
+        - WITCH_MAGIC
+        - WATERDRIP
+        - LAVADRIP
+        - PORTAL
+        - FLYING_GLYPH
+        - SNOWBALL_BREAK
+        - HEART
     FEET:
       item: GOLD_BOOTS
       vip: false
+      effects:
+        - COLOURED_DUST
+        - NOTE
+        - POTION_SWIRL
+        - HAPPY_VILLAGER
+        - FIREWORKS_SPARK
+        - VOID_FOG
+        - CRIT
+        - MAGIC_CRIT
+        - WITCH_MAGIC
+        - WATERDRIP
+        - LAVADRIP
+        - PORTAL
+        - FLYING_GLYPH
+        - SNOWBALL_BREAK
+        - HEART
     BODY:
       item: DIAMOND_CHESTPLATE
       vip: false
+      effects:
+        - COLOURED_DUST
+        - POTION_SWIRL
+        - HAPPY_VILLAGER
+        - FIREWORKS_SPARK
+        - VOID_FOG
+        - CRIT
+        - MAGIC_CRIT
+        - WITCH_MAGIC
+        - WATERDRIP
+        - LAVADRIP
+        - PORTAL
+        - FLYING_GLYPH
+        - SNOWBALL_BREAK

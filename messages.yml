@@ -21,161 +21,165 @@ icon:
 particles:
   particles:
     COLOURED_DUST-WHITE:
-      name: 'White dust particle'
+      name: '&fWhite dust particle'
       description:
-        - 'Select the white dust particle'
+        - '&7Select the white dust particle'
     COLOURED_DUST-BLACK:
-      name: 'Black dust particle'
+      name: '&8Black dust particle'
       description:
-        - 'Select the black dust particle'
+        - '&7Select the black dust particle'
     COLOURED_DUST-BLUE:
-      name: 'Blue dust particle'
+      name: '&9Blue dust particle'
       description:
-        - 'Select the blue dust particle'
+        - '&7Select the blue dust particle'
     COLOURED_DUST-AQUA:
-      name: 'Aqua dust particle'
+      name: '&bAqua dust particle'
       description:
-        - 'Select the aqua dust particle'
+        - '&7Select the aqua dust particle'
     COLOURED_DUST-LIME:
-      name: 'Lime dust particle'
+      name: '&aLime dust particle'
       description:
-        - 'Select the lime dust particle'
+        - '&7Select the lime dust particle'
     COLOURED_DUST-YELLOW:
-      name: 'Yellow dust particle'
+      name: '&eYellow dust particle'
       description:
-        - 'Select the yellow dust particle'
+        - '&7Select the yellow dust particle'
     COLOURED_DUST-ORANGE:
-      name: 'Orange dust particle'
+      name: '&6Orange dust particle'
       description:
-        - 'Select the orange dust particle'
+        - '&7Select the orange dust particle'
     COLOURED_DUST-RED:
-      name: 'Red dust particle'
+      name: '&cRed dust particle'
       description:
-        - 'Select the red dust particle'
+        - '&7Select the red dust particle'
     COLOURED_DUST-PINK:
-      name: 'Pink dust particle'
+      name: '&dPink dust particle'
       description:
-        - 'Select the pink dust particle'
+        - '&7Select the pink dust particle'
+    COLOURED_DUST-PURPLE:
+      name: '&5Purple dust particle'
+      description:
+        - '&7Select the purple dust particle'
     COLOURED_DUST-RAINBOW:
-      name: 'Rainbow dust particle'
+      name: '&aRainbow dust particle'
       description:
-        - 'Select the rainbow dust particle'
+        - '&7Select the rainbow dust particle'
     NOTE-PURPLE:
-      name: 'Purple note particle'
+      name: '&5Purple note particle'
       description:
-        - 'Select the purple note particle'
+        - '&7Select the purple note particle'
     NOTE-RED:
-      name: 'Red note particle'
+      name: '&cRed note particle'
       description:
-        - 'Select the red note particle'
+        - '&7Select the red note particle'
     NOTE-YELLOW:
-      name: 'Yellow note particle'
+      name: '&eYellow note particle'
       description:
-        - 'Select the yellow note particle'
+        - '&7Select the yellow note particle'
     NOTE-AQUA:
-      name: 'Aqua note particle'
+      name: '&bAqua note particle'
       description:
-        - 'Select the aqua note particle'
+        - '&7Select the aqua note particle'
     NOTE-BLUE:
-      name: 'Blue note particle'
+      name: '&9Blue note particle'
       description:
-        - 'Select the blue note particle'
+        - '&7Select the blue note particle'
     NOTE-GREEN:
-      name: 'Green note particle'
+      name: '&aGreen note particle'
       description:
-        - 'Select the green note particle'
+        - '&7Select the green note particle'
     NOTE-RAINBOW:
-      name: 'Rainbow note particle'
+      name: '&aRainbow note particle'
       description:
-        - 'Select the rainbow note particle'
+        - '&7Select the rainbow note particle'
     POTION_SWIRL-WHITE:
-      name: 'White swirl particle'
+      name: '&fWhite swirl particle'
       description:
-        - 'Select the white swirl particle'
+        - '&7Select the white swirl particle'
     POTION_SWIRL-BLACK:
-      name: 'Black swirl particle'
+      name: '&8Black swirl particle'
       description:
-        - 'Select the black swirl particle'
+        - '&7Select the black swirl particle'
     POTION_SWIRL-BLUE:
-      name: 'Blue swirl particle'
+      name: '&9Blue swirl particle'
       description:
-        - 'Select the blue swirl particle'
+        - '&7Select the blue swirl particle'
     POTION_SWIRL-AQUA:
-      name: 'Aqua swirl particle'
+      name: '&bAqua swirl particle'
       description:
-        - 'Select the aqua swirl particle'
+        - '&7Select the aqua swirl particle'
     POTION_SWIRL-LIME:
-      name: 'Lime swirl particle'
+      name: '&aLime swirl particle'
       description:
-        - 'Select the lime swirl particle'
+        - '&7Select the lime swirl particle'
     POTION_SWIRL-YELLOW:
-      name: 'Yellow swirl particle'
+      name: '&eYellow swirl particle'
       description:
-        - 'Select the yellow swirl particle'
+        - '&7Select the yellow swirl particle'
     POTION_SWIRL-ORANGE:
-      name: 'Orange swirl particle'
+      name: '&6Orange swirl particle'
       description:
-        - 'Select the orange swirl particle'
+        - '&7Select the orange swirl particle'
     POTION_SWIRL-RED:
-      name: 'Red swirl particle'
+      name: '&cRed swirl particle'
       description:
-        - 'Select the red swirl particle'
+        - '&7Select the red swirl particle'
     POTION_SWIRL-PINK:
-      name: 'Pink swirl particle'
+      name: '&dPink swirl particle'
       description:
-        - 'Select the pink swirl particle'
+        - '&7Select the pink swirl particle'
     POTION_SWIRL-RAINBOW:
-      name: 'Rainbow swirl particle'
+      name: '&aRainbow swirl particle'
       description:
-        - 'Select the rainbow swirl particle'
+        - '&7Select the rainbow swirl particle'
     HAPPY_VILLAGER:
-      name: 'Happy villager particle'
+      name: '&aHappy villager particle'
       description:
-        - 'Select the happy villager particle'
-    INSTANT_SPELL:
-      name: 'Instant spell particle'
+        - '&7Select the happy villager particle'
+    FIREWORKS_SPARK:
+      name: '&aFirework particle'
       description:
-        - 'Select the instant spell particle'
+        - '&7Select the firework particle'
     VOID_FOG:
-      name: 'Void fog particle'
+      name: '&aVoid fog particle'
       description:
-        - 'Select the void fog particle'
+        - '&7Select the void fog particle'
     CRIT:
-      name: 'Crit particle'
+      name: '&aCrit particle'
       description:
-        - 'Select the crit particle'
+        - '&7Select the crit particle'
     MAGIC_CRIT:
-      name: 'Magic crit particle'
+      name: '&aMagic crit particle'
       description:
-        - 'Select the magic crit particle'
+        - '&7Select the magic crit particle'
     WITCH_MAGIC:
-      name: 'Witch magic particle'
+      name: '&aWitch magic particle'
       description:
-        - 'Select the witch magic particle'
+        - '&7Select the witch magic particle'
     WATERDRIP:
-      name: 'Water drip particle'
+      name: '&aWater drip particle'
       description:
-        - 'Select the water drip particle'
+        - '&7Select the water drip particle'
     LAVADRIP:
-      name: 'Lava drip particle'
+      name: '&aLava drip particle'
       description:
-        - 'Select the lava drip particle'
+        - '&7Select the lava drip particle'
     PORTAL:
-      name: 'Portal particle'
+      name: '&aPortal particle'
       description:
-        - 'Select the portal particle'
+        - '&7Select the portal particle'
     FLYING_GLYPH:
-      name: 'Enchantment particle'
+      name: '&aEnchantment particle'
       description:
-        - 'Select the enchantment particle'
+        - '&7Select the enchantment particle'
     SNOWBALL_BREAK:
-      name: 'Snowball particle'
+      name: '&aSnowball particle'
       description:
-        - 'Select the snowball particle'
+        - '&7Select the snowball particle'
     HEART:
-      name: 'Heart particle'
+      name: '&aHeart particle'
       description:
-        - 'Select the heart particle'
+        - '&7Select the heart particle'
   effects:
     name: '&a%effect% effect'
     description:
@@ -219,77 +223,70 @@ static-buttons:
     description:
       - '&7Return to the main menu'
   name:
-    name: 'Name your pet'
+    name: '&aName your pet'
     description:
-      - 'Select a name for your pet'
+      - '&7Select a name for your pet'
+      - '&aVIP &7only'
   remove-pet:
-    name: 'Remove pet'
+    name: '&cRemove pet'
     description:
-      - 'Remove your pet'
+      - '&7Remove your pet'
   remove-disguise:
-    name: 'Remove disguise'
+    name: '&cRemove disguise'
     description:
-      - 'Remove your disguise'
+      - '&7Remove your disguise'
   remove-particle:
-    name: 'Remove particle effects'
+    name: '&cRemove particle effects'
     description:
-      - 'Remove your current particle effect'
+      - '&7Remove your current particle effect'
   viewmode:
-    name: 'Switch viewmode'
+    name: '&aSwitch viewmode'
     description:
-      - 'Toggle first person disguise mode'
+      - '&7Toggle first person disguise mode'
   remove-helmet:
-    name: 'Remove Helmet'
+    name: '&cRemove Helmet'
     description:
-      - 'Remove your helmet'
+      - '&7Remove your helmet'
   remove-chest:
-    name: 'Remove Chestplate'
+    name: '&cRemove Chestplate'
     description:
-      - 'Remove your chestplate'
+      - '&7Remove your chestplate'
   remove-legs:
-    name: 'Remove Leggings'
+    name: '&cRemove Leggings'
     description:
-      - 'Remove your leggings'
+      - '&7Remove your leggings'
   remove-boots:
-    name: 'Remove Boots'
+    name: '&cRemove Boots'
     description:
-      - 'Remove your boots'
+      - '&7Remove your boots'
   page-forward:
-    name: 'Next page'
+    name: '&aNext page'
     description:
-      - 'Go to the next page'
+      - '&7Go to the next page'
   page-backward:
-    name: 'Previous page'
+    name: '&aPrevious page'
     description:
-      - 'Return to the previous page'
+      - '&7Return to the previous page'
   remove-hat:
-    name: 'Remove hat'
+    name: '&cRemove hat'
     description:
-      - 'Remove your current hat'
-  particle-page:
-    name: 'Particles'
-    description:
-      - 'Select the particle type'
-  effect-page:
-    name: 'Effects'
-    description:
-      - 'Select the effects type'
+      - '&7Remove your current hat'
   toggle-pets:
-    name: 'Toggle Pet Visibility'
+    name: '&aToggle Pet Visibility'
     description:
-      - 'Pets are currently %value%'
+      - '&7Pets are currently &a%value%'
   toggle-players:
-    name: 'Toggle Player Visibility'
+    name: '&aToggle Player Visibility'
     description:
-      - 'Players are currently %value%'
+      - '&7Players are currently &a%value%'
   toggle-disguises:
-    name: 'Toggle Disguise Visibility'
+    name: '&aToggle Disguise Visibility'
     description:
-      - 'Disguises are currently %value%'
+      - '&7Disguises are currently &a%value%'
   toggle-particles:
-    name: 'Toggle Particle Visibility'
+    name: '&aToggle Particle Visibility'
     description:
-      - 'Particles are currently %value%'
+      - '&7Particles are currently &a%value%'
 click:
   name-queue: '&7Please enter the new name for your pet.'
   no-pet: '&cError: you must have a pet to do that.'
@@ -308,7 +305,7 @@ click:
   hat-selected: '&7You have selected the %material% hat'
   hat-removed: '&cYour hat has been removed.'
   no-hat: '&cError: you are not wearing a hat.'
-  vip-only: '&cError: only &aVIP players can use that!'
+  vip-only: '&cError: only &aVIP &cplayers can use that!'
   no-effect: '&cError: you must have an active effect to do that!'
   effect-removed: "&7Your particle effect has been removed."
   pets-off: '&7Pets are no longer visible.'

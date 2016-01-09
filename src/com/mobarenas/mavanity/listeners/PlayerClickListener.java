@@ -153,12 +153,6 @@ public class PlayerClickListener implements Listener {
             case PAGE_BACKWARD:
                 plugin.getParticleManager().mainPage(player, item);
                 break;
-            case PARTICLE_PAGE:
-                plugin.getParticleManager().particlePage(player, item);
-                break;
-            case EFFECT_PAGE:
-                plugin.getParticleManager().effectPage(player, item);
-                break;
             case EFFECT:
                 plugin.getParticleManager().effectSelect(player, item);
                 break;

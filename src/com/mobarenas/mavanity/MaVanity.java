@@ -34,6 +34,7 @@ public class MaVanity extends JavaPlugin {
     private CratesQueue cratesQueue;
     private EntityHider entityHider;
     private CrateManager crateManager;
+    private AvailableEffectHelper availableEffectHelper;
 
     @Override
     public void onEnable() {
@@ -66,6 +67,7 @@ public class MaVanity extends JavaPlugin {
         new EffectHelper(this);
         new WingHelper(this);
         new BungeeMessageListener(this);
+        this.availableEffectHelper = new AvailableEffectHelper(this);
         cratesQueue = new CratesQueue(this);
         crateManager = new CrateManager(this);
         playerManager = new PlayerManager(this);
@@ -134,5 +136,9 @@ public class MaVanity extends JavaPlugin {
 
     public CrateManager getCrateManager() {
         return crateManager;
+    }
+
+    public AvailableEffectHelper getAvailableManager() {
+        return availableEffectHelper;
     }
 }

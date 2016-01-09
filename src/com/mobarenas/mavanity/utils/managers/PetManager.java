@@ -56,6 +56,7 @@ public class PetManager {
             }
         }
         petAPI.givePet(player, item.getPetType(), false);
+
         plugin.getPlayerManager().getProfile(player.getUniqueId()).setPetsVisible(true);
         for (IPet p : EchoPetAPI.getAPI().getAllPets()) {
             Entity petEntity = p.getEntityPet().getBukkitEntity();

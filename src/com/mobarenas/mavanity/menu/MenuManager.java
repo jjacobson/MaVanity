@@ -2,8 +2,6 @@ package com.mobarenas.mavanity.menu;
 
 import com.mobarenas.mavanity.MaVanity;
 import com.mobarenas.mavanity.menu.menus.*;
-import com.mobarenas.mavanity.utils.ParticlePage;
-import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
@@ -84,7 +82,7 @@ public class MenuManager {
                 new HatMenu(plugin, player);
                 break;
             case PARTICLE:
-                new ParticleMenu(plugin, player, ParticlePage.MAIN);
+                new ParticleMenu(plugin, player, 1);
                 break;
             case PET:
                 new PetMenu(plugin, player);

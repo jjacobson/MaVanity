@@ -23,7 +23,7 @@ public class WingsEffect extends BukkitRunnable implements ParticleEffect {
     public WingsEffect(MaVanity plugin, Player player) {
         this.plugin = plugin;
         this.player = player;
-        this.runTaskTimer(plugin, 0L, 8L);
+        this.runTaskTimer(plugin, 0L, 10L);
     }
 
     @Override

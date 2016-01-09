@@ -6,7 +6,6 @@ import com.mobarenas.mavanity.menu.menus.ParticleMenu;
 import com.mobarenas.mavanity.messages.Messages;
 import com.mobarenas.mavanity.messages.Pair;
 import com.mobarenas.mavanity.player.PlayerProfile;
-import com.mobarenas.mavanity.utils.ParticlePage;
 import com.mobarenas.mavanity.utils.effects.*;
 import org.bukkit.Effect;
 import org.bukkit.entity.Player;
@@ -63,7 +62,7 @@ public class ParticleManager {
         profile.setParticlesVisible(true);
         plugin.getSettingsManager().removeDisabledParticles(player);
         profile.setEffectType(effectType);
-        start(player);
+        new ParticleMenu(plugin, player, 2);
     }
 
     public void start(Player player) {
@@ -108,17 +107,10 @@ public class ParticleManager {
         profile.setEffect(effect);
         profile.setColor(item.getColor()); // sets to null if no color (not COLORED_DUST)
         player.sendMessage(Messages.getMessage("click.particle-selected"));
+        start(player);
     }
 
     public void mainPage(Player player, MenuItem item) {
-        new ParticleMenu(plugin, player, ParticlePage.MAIN);
-    }
-
-    public void particlePage(Player player, MenuItem item) {
-        new ParticleMenu(plugin, player, ParticlePage.PARTICLE);
-    }
-
-    public void effectPage(Player player, MenuItem item) {
-        new ParticleMenu(plugin, player, ParticlePage.EFFECT);
+        new ParticleMenu(plugin, player, 1);
     }
 }
