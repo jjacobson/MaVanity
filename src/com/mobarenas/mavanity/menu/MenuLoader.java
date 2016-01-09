@@ -81,7 +81,7 @@ public class MenuLoader {
             ItemStack stack = new ItemStack(material);
             ItemMeta meta = stack.getItemMeta();
             String title;
-            String permission = "mobarenas.vanity.hat." + split[0].toLowerCase();
+            String permission = "mobarenas.vanity.hat." + split[0].toLowerCase().replace("_", "");
             if (material != Material.BANNER) {
                 stack.setDurability((short) sec.getInt("damage"));
                 String mat = material.toString().toLowerCase().replace("_", " ");
@@ -179,7 +179,7 @@ public class MenuLoader {
             meta.setLore(Messages.getMessages("disguise.description", new Pair("%type%", m)));
             stack.setItemMeta(meta);
             boolean vip = sec.getBoolean("vip");
-            String permission = "mobarenas.vanity.disguise." + entry.toString().toLowerCase();
+            String permission = "mobarenas.vanity.disguise." + entry.toLowerCase().replace("_", "");
             items.add(new MenuItem(stack, permission, ItemType.DISGUISE, vip, disguiseType));
         }
     }
@@ -200,7 +200,7 @@ public class MenuLoader {
             meta.setLore(Messages.getMessages("pet.description", new Pair("%type%", m)));
             stack.setItemMeta(meta);
             boolean vip = sec.getBoolean("vip");
-            String permission = "mobarenas.vanity.pet." + entry.toString().toLowerCase();
+            String permission = "mobarenas.vanity.pet." + entry.toLowerCase().replace("_", "");
             items.add(new MenuItem(stack, permission, ItemType.PET, vip, petType));
         }
     }
@@ -209,15 +209,16 @@ public class MenuLoader {
         for (String string : plugin.getConfig().getStringList("armor.colors")) {
             String[] sp = string.split(":");
             String name = sp[3];
+            boolean vip = Boolean.getBoolean(sp[4]);
             Color color = Color.fromRGB(Integer.parseInt(sp[0]), Integer.parseInt(sp[1]), Integer.parseInt(sp[2]));
-            loadArmorPiece(ArmorType.HELMET, color, name);
-            loadArmorPiece(ArmorType.CHESTPLATE, color, name);
-            loadArmorPiece(ArmorType.LEGGINGS, color, name);
-            loadArmorPiece(ArmorType.BOOTS, color, name);
+            loadArmorPiece(ArmorType.HELMET, color, name, vip);
+            loadArmorPiece(ArmorType.CHESTPLATE, color, name, vip);
+            loadArmorPiece(ArmorType.LEGGINGS, color, name, vip);
+            loadArmorPiece(ArmorType.BOOTS, color, name, vip);
         }
     }
 
-    private void loadArmorPiece(ArmorType type, Color color, String colorName) {
+    private void loadArmorPiece(ArmorType type, Color color, String colorName, boolean vip) {
         Material material = null;
         switch (type) {
             case HELMET:
@@ -241,8 +242,8 @@ public class MenuLoader {
         meta.setLore(Messages.getMessages("armor.description"));
         stack.setItemMeta(meta);
         ItemType itemType = ItemType.ARMOR;
-        String permission = ("mobarenas.vanity." + type.toString().toLowerCase() + "." + colorName);
-        items.add(new MenuItem(stack, permission, itemType, false, type, color));
+        String permission = ("mobarenas.vanity." + type.toString().toLowerCase() + "." + colorName.toLowerCase());
+        items.add(new MenuItem(stack, permission, itemType, vip, type, color));
     }
 
     private void loadStaticItems() {

@@ -146,22 +146,22 @@ static-buttons:
     vip: false
 armor:
   colors:
-    - '255:255:255:White'
-    - '128:128:128:Gray'
-    - '0:0:0:Black'
-    - '0:191:255:Light Blue'
-    - '0:255:255:Cyan'
-    - '0:0:255:Blue'
-    - '0:255:0:Lime'
-    - '0:128:0:Green'
-    - '218:165:32:Golden'
-    - '255:255:0:Yellow'
-    - '255:96:0:Orange'
-    - '255:0:0:Red'
-    - '128:0:0:Maroon'
-    - '139:69:19:Brown'
-    - '255:105:180:Pink'
-    - '255:0:255:Purple'
+    - '255:255:255:White:false'
+    - '128:128:128:Gray:false'
+    - '0:0:0:Black:false'
+    - '0:191:255:Light Blue:false'
+    - '0:255:255:Cyan:false'
+    - '0:0:255:Blue:false'
+    - '0:255:0:Lime:true'
+    - '0:128:0:Green:false'
+    - '218:165:32:Golden:false'
+    - '255:255:0:Yellow:false'
+    - '255:96:0:Orange:false'
+    - '255:0:0:Red:true'
+    - '128:0:0:Maroon:false'
+    - '139:69:19:Brown:false'
+    - '255:105:180:Pink:false'
+    - '255:0:255:Purple:false'
 disguises:
   WOLF:
     item: MONSTER_EGG
@@ -182,7 +182,7 @@ disguises:
   BAT:
     item: MONSTER_EGG
     damage: 65
-    vip: false
+    vip: true
   PIG:
     item: MONSTER_EGG
     damage: 90
@@ -230,7 +230,7 @@ disguises:
   CREEPER:
     item: MONSTER_EGG
     damage: 50
-    vip: false
+    vip: true
   MAGMA_CUBE:
     item: MONSTER_EGG
     damage: 62
@@ -251,10 +251,6 @@ disguises:
     item: MONSTER_EGG
     damage: 94
     vip: false
-  ELDER_GUARDIAN:
-    item: MONSTER_EGG
-    damage: 68
-    vip: false
   ENDERMITE:
     item: MONSTER_EGG
     damage: 67
@@ -262,7 +258,7 @@ disguises:
   IRON_GOLEM:
     item: MONSTER_EGG
     damage: 51
-    vip: false
+    vip: true
   HORSE:
     item: MONSTER_EGG
     damage: 100
@@ -290,7 +286,7 @@ disguises:
   GUARDIAN:
     item: MONSTER_EGG
     damage: 68
-    vip: false
+    vip: true
 pets:
   WOLF:
     item: MONSTER_EGG
@@ -311,7 +307,7 @@ pets:
   BAT:
     item: MONSTER_EGG
     damage: 65
-    vip: false
+    vip: true
   PIG:
     item: MONSTER_EGG
     damage: 90
@@ -367,7 +363,7 @@ pets:
   BLAZE:
     item: MONSTER_EGG
     damage: 61
-    vip: false
+    vip: true
   SNOWMAN:
     item: MONSTER_EGG
     damage: 56
@@ -383,7 +379,7 @@ pets:
   GUARDIAN:
     item: MONSTER_EGG
     damage: 68
-    vip: false
+    vip: true
   ENDERMITE:
     item: MONSTER_EGG
     damage: 67
@@ -391,11 +387,11 @@ pets:
   IRONGOLEM:
     item: MONSTER_EGG
     damage: 51
-    vip: false
+    vip: true
   HORSE:
     item: MONSTER_EGG
     damage: 100
-    vip: false
+    vip: true
   SLIME:
     item: MONSTER_EGG
     damage: 55
@@ -418,7 +414,7 @@ hats:
   DIAMOND_BLOCK:
     vip: false
   EMERALD_BLOCK:
-    vip: false
+    vip: true
   REDSTONE_BLOCK:
     vip: false
   COAL_BLOCK:
@@ -429,13 +425,15 @@ hats:
   BRICK:
     vip: false
   TNT:
-    vip: false
+    vip: true
   OBSIDIAN:
     vip: false
   ICE:
     vip: false
   PUMPKIN:
     vip: false
+  JACK_O_LANTERN:
+    vip: true
   GLOWSTONE:
     vip: false
   MELON_BLOCK:
@@ -474,7 +472,7 @@ hats:
     patterns:
       - 'BASE:BLACK'
       - 'SKULL:WHITE'
-    vip: false
+    vip: true
   BANNER-SKULL:
     patterns:
       - 'BASE:BLACK'
@@ -525,7 +523,7 @@ hats:
       - 'STRIPE_CENTER:BLACK'
       - 'TRIANGLE_TOP:PURPLE'
       - 'TRIANGLES_BOTTOM:PURPLE'
-    vip: false
+    vip: true
   BANNER-RABBIT:
     patterns:
       - 'BASE:WHITE'
@@ -651,7 +649,7 @@ particles:
       permission: mobarneas.vanity.particles.purpledust
     COLOURED_DUST-RAINBOW:
       item: CAKE
-      vip: false
+      vip: true
       color: '1:1:1'
       permission: mobarneas.vanity.particles.rainbowdust
     NOTE-PURPLE:
@@ -745,12 +743,12 @@ particles:
     POTION_SWIRL-RAINBOW:
       item: POTION
       damage: 8229
-      vip: false
+      vip: true
       color: '1:1:1'
       permission: mobarneas.vanity.particles.rainbowswirl
     HAPPY_VILLAGER:
       item: EMERALD
-      vip: false
+      vip: true
       permission: mobarenas.vanity.particles.villager
     FIREWORKS_SPARK:
       item: FIREWORK
@@ -797,12 +795,12 @@ particles:
     HEART:
       item: POTION
       damage: 16389
-      vip: false
+      vip: true
       permission: mobarenas.vanity.particles.heart
   effects:
     HALO:
       item: DOUBLE_PLANT
-      vip: false
+      vip: true
       effects:
         - COLOURED_DUST
         - NOTE
@@ -834,7 +832,7 @@ particles:
         - FLYING_GLYPH
     WINGS:
       item: FEATHER
-      vip: false
+      vip: true
       effects:
         - COLOURED_DUST
         - HAPPY_VILLAGER

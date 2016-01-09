@@ -51,7 +51,8 @@ public class PlayerManager {
         Player player = plugin.getServer().getPlayer(uuid);
         ParticleEffect effect = plugin.getParticleManager().getRunning().get(uuid);
         if (effect != null) {
-            plugin.getParticleManager().getRunning().remove(effect);
+            effect.stop();
+            plugin.getParticleManager().getRunning().remove(uuid);
         }
         if (player != null) {
             plugin.getSettingsManager().removeDisabledDisguise(player);

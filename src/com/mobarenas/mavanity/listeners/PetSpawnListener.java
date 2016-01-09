@@ -1,5 +1,6 @@
 package com.mobarenas.mavanity.listeners;
 
+import com.dsh105.echopet.compat.api.entity.PetType;
 import com.dsh105.echopet.compat.api.event.PetPreSpawnEvent;
 import com.mobarenas.mavanity.MaVanity;
 import com.mobarenas.mavanity.player.PlayerProfile;
@@ -27,6 +28,9 @@ public class PetSpawnListener implements Listener {
         String pet = event.getPet().getPetType().toString().toLowerCase();
         event.getPet().getOwner().addAttachment(plugin, "echopet.pet.type." + pet + ".*", true);
         event.getPet().getOwner().addAttachment(plugin, "echopet.pet.type." + pet, true);
+        if (event.getPet().getPetType() == PetType.GUARDIAN) {
+            event.getPet().getOwner().addAttachment(plugin, "echopet.pet.type.guardian.elder", false);
+        }
         Bukkit.getServer().getScheduler().runTaskLater(plugin, () -> {
             Entity petEntity = event.getPet().getEntityPet().getBukkitEntity();
             for (UUID uuid : plugin.getPlayerManager().getProfiles().keySet()) {

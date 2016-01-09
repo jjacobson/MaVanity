@@ -7,6 +7,7 @@ import com.mobarenas.mavanity.messages.Messages;
 import com.mobarenas.mavanity.messages.Pair;
 import com.mobarenas.mavanity.player.PlayerProfile;
 import com.mobarenas.mavanity.utils.effects.*;
+import org.bukkit.Color;
 import org.bukkit.Effect;
 import org.bukkit.entity.Player;
 
@@ -56,7 +57,8 @@ public class ParticleManager {
             remove(player);
         }
         if (effect == null) {
-            profile.setEffect(Effect.HAPPY_VILLAGER); // Default effect
+            profile.setEffect(Effect.COLOURED_DUST); // Default effect
+            profile.setColor(Color.fromRGB(255, 255, 255)); // default color
         }
         player.sendMessage(Messages.getMessage("click.effect-selected", new Pair("%effect%", effectType.toString().toLowerCase())));
         profile.setParticlesVisible(true);
@@ -108,6 +110,7 @@ public class ParticleManager {
         profile.setColor(item.getColor()); // sets to null if no color (not COLORED_DUST)
         player.sendMessage(Messages.getMessage("click.particle-selected"));
         start(player);
+        player.closeInventory();
     }
 
     public void mainPage(Player player, MenuItem item) {
