@@ -89,6 +89,7 @@ public class PetManager {
             icon.removeEnchantment(Enchantment.DAMAGE_ALL);
         }
         petAPI.removePet(player, false, true);
+        EchoPet.getSqlManager().clearFromDatabase(player);
         player.sendMessage(Messages.getMessage("click.pet-removed"));
     }
 }

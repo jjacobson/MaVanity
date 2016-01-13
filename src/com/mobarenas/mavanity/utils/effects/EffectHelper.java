@@ -63,7 +63,7 @@ public class EffectHelper {
             if (plugin.getSettingsManager().getDisabledParticles().contains(p)) {
                 continue;
             }
-            p.spigot().playEffect(loc, effect, 0, 0, 0.03F, 0.03F, 0.01F, 0.0F, 3, 16);
+            p.spigot().playEffect(loc, effect, 0, 0, 0.03F, 0.03F, 0.03F, 0.0F, 3, 16);
         }
     }
 
@@ -145,9 +145,7 @@ public class EffectHelper {
             if (plugin.getSettingsManager().getDisabledParticles().contains(p)) {
                 continue;
             }
-            for (int i = 0; i < 10; i++) {
-                p.spigot().playEffect(loc, effect, 0, 0, 0.0F, 0.0F, 0.0F, 0.0F, 1, 16);
-            }
+            p.spigot().playEffect(loc, effect, 0, 0, 0.03F, 0.03F, 0.03F, 0.1F, 5, 16);
         }
     }
 

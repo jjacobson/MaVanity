@@ -288,7 +288,7 @@ static-buttons:
     description:
       - '&7Particles are currently &a%value%'
 click:
-  name-queue: '&7Please enter the new name for your pet.'
+  name-queue: '&7Please enter the new name for your pet:'
   no-pet: '&cError: you must have a pet to do that.'
   name-length: '&cError: a pet name must be between 3 - 32 characters.'
   name-changed: '&7You have changed your pets name to: &r%name%'

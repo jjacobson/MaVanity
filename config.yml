@@ -688,20 +688,19 @@ particles:
       color: '0:0:0'
       permission: mobarneas.vanity.particles.rainbowrecord
     POTION_SWIRL-WHITE:
-      item: POTION
-      damage: 8194
+      item: SUGAR
       vip: false
       color: '255:255:255'
       permission: mobarneas.vanity.particles.whiteswirl
     POTION_SWIRL-BLACK:
-      item: POTION
-      damage: 8204
+      item: COAL
+      damage: 1
       vip: false
       color: '25:25:25'
       permission: mobarneas.vanity.particles.blackswirl
     POTION_SWIRL-BLUE:
       item: POTION
-      damage: 8198
+      damage: 16
       vip: false
       color: '0:0:255'
       permission: mobarneas.vanity.particles.blueswirl
@@ -718,7 +717,7 @@ particles:
       color: '0:255:0'
       permission: mobarneas.vanity.particles.limeswirl
     POTION_SWIRL-YELLOW:
-      item: GOLD_INGOT
+      item: GLOWSTONE_DUST
       vip: false
       color: '255:255:0'
       permission: mobarneas.vanity.particles.yellowswirl
@@ -729,14 +728,13 @@ particles:
       color: '255:69:0'
       permission: mobarneas.vanity.particles.orangeswirl
     POTION_SWIRL-RED:
-      item: POTION
-      damage: 8233
+      item: REDSTONE
       vip: false
       color: '255:0:0'
       permission: mobarneas.vanity.particles.redswirl
     POTION_SWIRL-PINK:
       item: POTION
-      damage: 8257
+      damage: 8289
       vip: false
       color: '255:105:180'
       permission: mobarneas.vanity.particles.pinkswirl
@@ -755,8 +753,7 @@ particles:
       vip: false
       permission: mobarenas.vanity.particles.fireworksspark
     VOID_FOG:
-      item: COAL
-      damage: 1
+      item: MELON_SEEDS
       vip: false
       permission: mobarenas.vanity.particles.voidfog
     CRIT:
@@ -793,8 +790,7 @@ particles:
       vip: false
       permission: mobarenas.vanity.particles.snowball
     HEART:
-      item: POTION
-      damage: 16389
+      item: APPLE
       vip: true
       permission: mobarenas.vanity.particles.heart
   effects:
