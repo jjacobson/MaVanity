@@ -31,8 +31,8 @@ public class AddCratesCommand implements CommandExecutor {
         UUID uuid = UUID.fromString(args[0]);
         int crates = Integer.parseInt(args[1]);
         Player player = plugin.getServer().getPlayer(uuid);
-        if (player != null && player.isOnline()) { // player is already online, just give them the crates
-            PlayerProfile profile = plugin.getPlayerManager().getProfile(uuid);
+        PlayerProfile profile = plugin.getPlayerManager().getProfile(uuid);
+        if (player != null && player.isOnline() && profile != null) { // player is already online, just give them the crates
             profile.setCrates(profile.getCrates() + crates);
             player.sendMessage(Messages.getMessage("crates.added", new Pair("%amount%", crates + "")));
             System.out.println("Gave " + crates + " crates to " + player.getName());

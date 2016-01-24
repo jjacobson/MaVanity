@@ -321,8 +321,8 @@ click:
 crates:
   no-perms: '&cError: you do not have permission to use that command.'
   added: '&7You have received &b%amount% &7crate(s)!'
-  title: '%type% unlocked'
-  subtitle: 'Unlocked the %name%'
+  title: '&e%type% &bunlocked'
+  subtitle: '&bUnlocked the &e%name%'
   name: '&cLocked Chest'
   description:
     - '&7Click to unlock this chest!'

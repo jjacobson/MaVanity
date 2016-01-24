@@ -84,6 +84,6 @@ public class CrateManager {
                 return;
             }
             player.sendPluginMessage(plugin, "crate-alerts", stream.toByteArray());
-        }, 100L);
+        }, 60L);
     }
 }

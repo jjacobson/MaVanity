@@ -2,6 +2,8 @@ package com.mobarenas.mavanity.listeners;
 
 import com.mobarenas.mavanity.MaVanity;
 import com.mobarenas.mavanity.events.VanityPlayerLoadEvent;
+import com.mobarenas.mavanity.messages.Messages;
+import com.mobarenas.mavanity.messages.Pair;
 import com.mobarenas.mavanity.player.PlayerProfile;
 import me.libraryaddict.disguise.DisguiseAPI;
 import me.libraryaddict.disguise.disguisetypes.TargetedDisguise;
@@ -26,13 +28,15 @@ public class PlayerLoadedListener implements Listener {
         if (plugin.getCratesQueue().isWaiting(profile.getUuid())) { // give them any queued crates and unload them
             profile.setCrates(profile.getCrates() + plugin.getCratesQueue().getCrates(profile.getUuid()));
             plugin.getCratesQueue().removeCrates(profile.getUuid());
+            if (event.isOnline()) {
+                plugin.getServer().getPlayer(profile.getUuid()).sendMessage(Messages.getMessage("crates.added", new Pair("%amount%", "1")));
+            }
+        }
+        if (!event.isOnline()) { // return if we are just loading to modify their profile
             plugin.getPlayerManager().removePlayer(profile.getUuid(), true);
             return;
         }
-        if (!event.isOnline()) { // return if we are just loading to modify their profile
-            return;
-        }
-        Player player = plugin.getServer().getPlayer(event.getProfile().getUuid());
+        Player player = plugin.getServer().getPlayer(profile.getUuid());
         if (player == null || !player.isOnline()) { // if they have disconnected during loading, skip this
             return;
         }

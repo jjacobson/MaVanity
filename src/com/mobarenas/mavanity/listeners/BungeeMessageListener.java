@@ -36,13 +36,12 @@ public class BungeeMessageListener implements PluginMessageListener {
         }
         UUID uuid = UUID.fromString(response);
         Player p = plugin.getServer().getPlayer(uuid);
-        if (p != null && p.isOnline()) { // player is already online, just give them the crates
-            PlayerProfile profile = plugin.getPlayerManager().getProfile(uuid);
+        PlayerProfile profile = plugin.getPlayerManager().getProfile(uuid);
+        if (p != null && p.isOnline() && profile != null) {
             profile.setCrates(profile.getCrates() + 1);
             p.sendMessage(Messages.getMessage("crates.added", new Pair("%amount%", 1 + "")));
             return;
         }
-        plugin.getPlayerManager().loadProfile(uuid, false);
         plugin.getCratesQueue().addCrates(uuid, 1);
     }
 }

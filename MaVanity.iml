@@ -7,10 +7,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="spigot-1.8.8" level="project" />
+    <orderEntry type="library" name="Vault" level="project" />
     <orderEntry type="library" name="EchoPet" level="project" />
     <orderEntry type="library" name="LibsDisguises" level="project" />
     <orderEntry type="library" name="ProtocolLib" level="project" />
-    <orderEntry type="library" name="Vault" level="project" />
-    <orderEntry type="library" name="spigot-1.8.8" level="project" />
   </component>
 </module>
