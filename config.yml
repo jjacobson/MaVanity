@@ -3,7 +3,7 @@ mysql:
   port: 3306
   database: mobarena
   username: root
-  password: waapaa9660
+  password: password
 pages:
   disguise:
     material: MONSTER_EGG
